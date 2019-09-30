@@ -28,6 +28,14 @@ export class ListTaskComponent implements OnInit {
     })
   }
 
+  key: string = 'name'; 
+  reverse: boolean = false;
+  sort(key){
+    this.key = key;
+    this.reverse = !this.reverse;
+  }
+    p: number = 1;
+  
   
   deleteTask(id) {
     if (window.confirm('Are you sure, you want to delete?')){
