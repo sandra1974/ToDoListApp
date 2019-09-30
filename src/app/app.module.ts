@@ -13,7 +13,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import {FilterPipe} from './list-task/list-task.component';
 import { MatTableModule } from '@angular/material/table';
 import { Sort, MatSortModule } from '@angular/material/sort';
-
+import { Ng2OrderModule } from 'ng2-order-pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { Sort, MatSortModule } from '@angular/material/sort';
     FormsModule,
 	NgxPaginationModule,
 	 MatTableModule,
-    MatSortModule
+    MatSortModule,
+   Ng2OrderModule 
 	
   ],
   providers: [],
