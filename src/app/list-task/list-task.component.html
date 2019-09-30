@@ -42,16 +42,16 @@
     <div class="col-md-12">
       <table  class="table table-bordered" id="tasks">
         <thead>
-          <tr>
-            <th scope="col" >ID</th>
-            <th scope="col" >TASK NAME</th>
-            <th scope="col" >DESCRIPTION</th>
-            <th scope="col" >CREATED</th>
+           <tr>
+            <th scope="col" (click)="sort('id')">ID <span class="glyphicon sort-icon" *ngIf="key =='id'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span> </th>
+            <th scope="col" (click)="sort('name')">TASK NAME <span class="glyphicon sort-icon" *ngIf="key =='name'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span> </th>
+            <th scope="col" (click)="sort('description')">DESCRIPTION <span class="glyphicon sort-icon" *ngIf="key =='description'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>  </th>
+            <th scope="col"(click)="sort('created')" >CREATED <span class="glyphicon sort-icon" *ngIf="key =='created'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span> </th>
             <th scope="col">ACTION</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let task of Task  | paginate: { itemsPerPage: 5, currentPage: page }   |  arrayFilter:search; let i = index   ">
+          <tr *ngFor="let task of Task  | orderBy: key : reverse  | paginate: { itemsPerPage: 5, currentPage: page }   |  arrayFilter:search; let i = index   ">
             <td>{{task.id}}</td>
             <td>{{task.name}}</td>
             <td>{{task.description}}</td>
