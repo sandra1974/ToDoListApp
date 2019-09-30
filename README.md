@@ -4,7 +4,8 @@ Aplikacija je izrađena korištenjem Angular CLI, Angular8, RESTful API, Bootstr
 
 Funkcije koje su prezentirane u ovoj aplikaciji:
 - CRUD - pregled, unos novih zadataka, ažuriranje postojećih i brisanje
-- pretraga svih podataka iz tablice
+- pretraga/filtriranje podataka iz tablice
+- sortiranje podataka iz tablice
 - numeriranje pregleda podataka iz tablice do 5 redova po stranici
 - povezivanje s JSON-serverom za spremanje unesenih podataka i testiranje CRUD operacija.
 
