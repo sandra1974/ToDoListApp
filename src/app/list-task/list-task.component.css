@@ -75,3 +75,8 @@ body {
   background-color: #6ea9b5;
   color: white;
 }
+
+thead>tr>th {
+    cursor: pointer;
+}
+
