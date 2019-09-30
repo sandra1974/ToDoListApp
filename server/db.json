@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Marketing Strategy",
+      "description": "We should discuss about implementing new marketing strategy to achieve better sales",
+      "created": "2019-09-29T06:04"
+    },
+    {
+      "id": 2,
+      "name": "Cold Calls",
+      "description": "Promotion of new products via phone calls and affairs",
+      "created": "2019-09-29T13:14"
+    },
+    {
+      "id": 3,
+      "name": "Presentation",
+      "description": "Organizing product presentation on site and in company office",
+      "created": "2019-05-05"
+    },
+    {
+      "id": 4,
+      "name": "Customer Support",
+      "description": "Organizing installation, education and customer support via helpdesk",
+      "created": "2019-07-21"
+    },
+    {
+      "name": "helpdesk",
+      "description": "Redesign web for helpdesk service",
+      "created": "2019-09-29",
+      "id": 5
+    },
+    {
+      "name": "Testing",
+      "description": "Testing the new software will be on Friday",
+      "created": "2019-09-29T23:02",
+      "id": 6
+    },
+    {
+      "name": "Customer Education",
+      "description": "Customer education should be scheduled during this week.",
+      "created": "2019-09-29T23:00",
+      "id": 7
+    },
+    {
+      "name": "Onsite Education",
+      "description": "Onsite education should be scheduled during this week for new client.",
+      "created": "2019-09-30T13:37",
+      "id": 8
+    }
+  ]
+}

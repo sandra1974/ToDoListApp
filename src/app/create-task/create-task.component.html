@@ -1,0 +1,53 @@
+<div>
+
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">TO DO LIST</a>
+  <div class="header-right">
+    <a class="" href=""  routerLink="/list-task" >Back to list</a>
+   
+   
+  </div>
+</div>
+
+
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Add new task</h3>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="taskDetails.name" class="form-control" placeholder="Task Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="taskDetails.description" class="form-control" placeholder="Task Description">
+    </div>
+
+    <div class="form-group">
+	
+	 <input type="datetime-local" [(ngModel)]="taskDetails.created"  alt="Enter date of creation" class="form-control" placeholder="yyyy-mm-ddThh:mm:ss.ffffff">
+	     
+	         </div>
+	  	  
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block button1" (click)="addTask()">Save</button>
+    </div>
+
+	<div>
+	
+</div>
+
+	
+  </div>
+
+
+</body>
+
+</div>
+
+
+
+
