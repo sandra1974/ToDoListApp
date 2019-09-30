@@ -20,7 +20,7 @@ npm install bootstrap
 
 4. Instalirati JSON server
 npm install -g json-server
-touch server/db.json 
+npm touch server/db.json 
 
 5. Pokrenuti JSON server
 npm json-server --watch server/db.json
