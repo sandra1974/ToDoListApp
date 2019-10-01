@@ -43,6 +43,7 @@
       <table  class="table table-bordered" id="tasks">
         <thead>
            <tr>
+            <th scope="col">DELETE SELECTED</th> 
             <th scope="col" (click)="sort('id')">ID <span class="glyphicon sort-icon" *ngIf="key =='id'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span> </th>
             <th scope="col" (click)="sort('name')">TASK NAME <span class="glyphicon sort-icon" *ngIf="key =='name'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span> </th>
             <th scope="col" (click)="sort('description')">DESCRIPTION <span class="glyphicon sort-icon" *ngIf="key =='description'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>  </th>
@@ -52,6 +53,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let task of Task  | orderBy: key : reverse  | paginate: { itemsPerPage: 5, currentPage: page }   |  arrayFilter:search; let i = index   ">
+            <td  align="center" ><input #{{task.count}} [(ngModel)]="task.selected" type="checkbox"></td>
             <td>{{task.id}}</td>
             <td>{{task.name}}</td>
             <td>{{task.description}}</td>
@@ -61,6 +63,8 @@
               <span class="delete" (click)="deleteTask(task.id)">DELETE</span>
             </td>
           </tr>
+          <br>
+		     <button (click)="deleteTaskSelected()">DELETE SELECTED</button>
         </tbody>
       </table>
 	  <pagination-controls (pageChange)="page = $event"></pagination-controls>
