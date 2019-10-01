@@ -10,7 +10,7 @@ export class ListTaskComponent implements OnInit {
 
   Task: any = [];
   page = 1;  
-  
+   selectedTask = [];
   
   
   
@@ -35,6 +35,19 @@ export class ListTaskComponent implements OnInit {
     this.reverse = !this.reverse;
   }
     p: number = 1;
+  
+   deleteTaskSelected(){
+	   if (window.confirm('Are you sure, you want to delete selected tasks?')){
+        this.selectedTask= this.Task.filter(_ => _.selected);
+            for (var task in this.selectedTask) {
+           this.taskService.deleteTask(this.selectedTask[task].id)
+             .subscribe(data =>{
+             this.loadTasks()
+             }   
+             )    
+          }
+		  }
+}  
   
   
   deleteTask(id) {
