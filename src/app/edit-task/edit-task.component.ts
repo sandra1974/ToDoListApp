@@ -25,7 +25,7 @@ export class EditTaskComponent implements OnInit {
     })
   }
 
-  // Update employee data
+
   updateTask() {
     if(window.confirm('Are you sure, you want to update?')){
       this.taskService.updateTask(this.id, this.taskData).subscribe(data => {
