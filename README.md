@@ -34,4 +34,3 @@ ng serve --open
 Otvoriti: http://localhost:4200
 
 
-Potrebno vrijeme za kreiranje aplikacije: 4 dana.
