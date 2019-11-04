@@ -1,36 +1,36 @@
 TO DO LIST APP
 
-Aplikacija je izrađena korištenjem Angular CLI, Angular8, RESTful API, Bootstrap i JSON servera za testiranje CRUD funkcija.
+Application has built using Angular CLI, Angular 8, RESTful API, Bootstrap and JSON server for testing CRUD functions.
 
-Funkcije koje su prezentirane u ovoj aplikaciji:
-- CRUD - pregled, unos novih zadataka, ažuriranje postojećih i brisanje
-- brisanje je omogućeno pojedinačno i skupno pomoću check-boxa
-- pretraga/filtriranje podataka iz tablice
-- sortiranje podataka iz tablice
-- numeriranje pregleda podataka iz tablice do 5 redova po stranici
-- povezivanje s JSON-serverom za spremanje unesenih podataka i testiranje CRUD operacija.
+Fuctions presented in this app are:
+- CRUD - display, adding new tasks, updating of existing tasks and deleting
+- individual deleting and multiple deleting using check box
+- search/filtering data from table
+- sorting data from table
+- pagination
+- connection with JSON server for storing inserted data and testing CRUD functions.
 
-Pokretanje aplikacije:
+Launching the application:
 
-1. Instalirati Angular CLI
+1. Install Angular CLI
 npm install @angular/cli -g
 
-2. Instalirati Bootstrap
+2. Install Bootstrap
 npm install bootstrap
 
-3. Downloadirati datoteku sa Githuba
+3. Download file from Github
 
-4. Instalirati JSON server
+4. Install JSON server
 npm install -g json-server
 npm touch server/db.json 
 
-5. Pokrenuti JSON server
+5. Initiate JSON server
 npm json-server --watch server/db.json
 
-5. Provjeriti dali je db.json datoteka na json serveru, otvoriti: http://localhost:3000/tasks
+6. Check if db.json file is on json server, open: http://localhost:3000/tasks
 
-6. Zatim pokrenuti Angular aplikaciju unutar preuzetog projekta
+7. Initiate Angular application within the downloaded project
 ng serve --open
-Otvoriti: http://localhost:4200
+Open: http://localhost:4200
 
 
