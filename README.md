@@ -25,7 +25,7 @@ npm install -g json-server
 npm touch server/db.json 
 
 5. Initiate JSON server
-npm json-server --watch server/db.json
+json-server --watch server/db.json
 
 6. Check if db.json file is on json server, open: http://localhost:3000/tasks
 
